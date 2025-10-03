@@ -12,11 +12,12 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
   config:
     import: optional:configserver:http://localhost:8888
-    fail-fast: false
-    retry:
-      max-attempts: 1
-      initial-interval: 1000
-      multiplier: 1.5
+    ## keep option or add below if server hang up
+    #fail-fast: false
+    #retry:
+      #max-attempts: 1
+      #initial-interval: 1000
+      #multiplier: 1.5
    
 eureka:
   client:
