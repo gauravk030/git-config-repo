@@ -10,6 +10,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+    
+    ## dont add below in config server side,Only add in client side
+    #config:
+      #import: optional:configserver:http://localhost:8888
     ## keep option or add below if server hang up
     #fail-fast: false
     #retry:
