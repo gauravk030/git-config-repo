@@ -35,3 +35,9 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true
         enable: false     
+
+logging:
+  file:
+    name: "D:/Gaurav/Study/Programs/Backend Programs/microservice/microservice2/microservice_logs/conversion-service/application.log"
+  pattern:
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

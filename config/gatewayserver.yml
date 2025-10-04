@@ -39,16 +39,12 @@ management:
       prometheus:
         enabled: true
 
+
 logging:
-  level:
-    org:
-      springframework:
-        cloud:
-          gateway:
-            filter: DEBUG
-        web:
-          filter:
-            CommonsRequestLoggingFilter: DEBUG
+  file:
+    name: "D:/Gaurav/Study/Programs/Backend Programs/microservice/microservice2/microservice_logs/gateway-server/application.log"
+  pattern:
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
 
 # Optional Config Server import
 # spring:

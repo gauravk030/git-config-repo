@@ -39,11 +39,13 @@ security:
 
 logging:
   level:
-    org:
-      springframework:
-        security: DEBUG
-        web: DEBUG
+    org.springframework: INFO
+    org.hibernate: ERROR
+    com.example: DEBUG
 
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
 
 management:
   endpoints:
@@ -51,3 +53,4 @@ management:
       exposure:
         #include: health,info
         include: refresh,health,info,prometheus
+
