@@ -52,5 +52,5 @@ management:
     web:
       exposure:
         #include: health,info
-        include: refresh,health,info,prometheus
+        include: refresh,health,info
 

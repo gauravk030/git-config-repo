@@ -1,11 +1,9 @@
 ## if same key present in global then iti is overirde by specific service key
 spring:
-  application:
-    name: currency-exchange-service
   datasource:
     driver-class-name: org.h2.Driver
     username: sa
-    password: 
+    password:
     url: jdbc:h2:mem:testdb
   jpa:
     show-sql: true
