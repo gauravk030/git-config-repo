@@ -20,7 +20,7 @@ spring:
       #max-attempts: 1
       #initial-interval: 1000
       #multiplier: 1.5
-   cloud:
+  cloud:
     config:
       retry:
         max-attempts: 3
