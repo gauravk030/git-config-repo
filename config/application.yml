@@ -20,7 +20,13 @@ spring:
       #max-attempts: 1
       #initial-interval: 1000
       #multiplier: 1.5
-   
+   cloud:
+    config:
+      retry:
+        max-attempts: 3
+        initial-interval: 1000
+        multiplier: 1.5
+        
 eureka:
   client:
     service-url:
