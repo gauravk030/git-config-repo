@@ -60,6 +60,7 @@ management:
   endpoints:
     web:
       exposure:
-        #include: health,info
-        include: refresh,health,info,prometheus
-
+        include: info, health, refresh  # include all endpoints you need
+  endpoint:
+    info:
+      enabled: true
