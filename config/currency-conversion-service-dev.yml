@@ -41,3 +41,7 @@ logging:
     name: "D:/Gaurav/Study/Programs/Backend Programs/microservice/microservice2/microservice_logs/conversion-service/application.log"
   pattern:
     file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  logstash:
+    enabled: true
+    destination: localhost:5004
+    custom-fields: '{"service":"gateway-server"}'
